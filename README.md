@@ -1,2 +1,2 @@
 # CorruptShield
-AI-powered tool for transparency in public infrastructure.
+AI-powered tool for transparency in public infrastructure in the Philippines.
