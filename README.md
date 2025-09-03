@@ -45,3 +45,10 @@ Fighting corruption by providing real-time monitoring, analytics, and public das
 
 ## 📄 License
 MIT License — free to use, improve, and adapt.
+
+---
+
+## 📚 Documentation
+- [Vision](docs/vision.md)
+- [Roadmap](docs/roadmap.md)
+- [Research](docs/research.md)
