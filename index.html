@@ -5,38 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CorruptShield</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f4f6f8; color: #333;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
       text-align: center;
     }
     header {
-      background: #1a73e8; color: white;
+      background: #1a73e8;
+      color: white;
       padding: 30px 10px;
     }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { margin-top: 10px; font-size: 1.2em; }
-    .logo { width: 120px; height: auto; margin: 0 auto 15px; display: block; }
-    @media (max-width: 600px) { .logo { width: 70px; } }
-    nav { margin: 20px 0; }
-    nav a {
-      text-decoration: none; margin: 0 15px;
-      color: #1a73e8; font-weight: bold;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
-    nav a:hover { text-decoration: underline; }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .logo {
+      width: 120px;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    @media (max-width: 600px) {
+      .logo {
+        width: 70px;
+      }
+    }
+    nav {
+      margin: 20px 0;
+    }
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #1a73e8;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     section {
-      padding: 20px; max-width: 800px; margin: auto;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
       text-align: left;
     }
-    section h2 { text-align: center; color: #1a73e8; }
-    footer {
-      background: #222; color: #ccc;
-      padding: 10px; margin-top: 20px;
-      font-size: 0.9em; text-align: center;
+    h2 {
+      text-align: center;
+      margin-top: 40px;
     }
-    ul { margin-left: 20px; }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 10px 0;
+    }
+    ul li i {
+      color: #1a73e8;
+      margin-right: 8px;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 0.9em;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -54,39 +98,34 @@
   </nav>
 
   <section>
-    <h2>Welcome</h2>
-    <p>CorruptShield is an AI-powered initiative built to expose corruption in infrastructure projects and ensure that public funds deliver real value for Filipino communities.</p>
-  </section>
-
-  <section>
-    <h2>Problem Statement</h2>
-    <p>Recent investigations reveal massive corruption within DPWH, particularly in flood control but also in other public works:</p>
+    <h2>The Problem</h2>
+    <p>For decades, the Department of Public Works and Highways (DPWH) has been plagued with corruption scandals costing the Filipino people trillions of pesos. Key issues include:</p>
     <ul>
-      <li>Since 2022, ₱545 billion was allocated for flood control—with many projects found to be substandard, undocumented, or entirely fictitious.</li>
-      <li>The Department of Finance estimates ghost projects alone cost the economy between ₱42 billion–₱118.5 billion from 2023 to 2025—equivalent to 95,000–266,000 lost jobs.</li>
-      <li>Over the past 15 years (2011–2025), more than ₱1.9 trillion was allocated to flood control, with possibly half (₱1 trillion) lost to corruption.</li>
-      <li>Cat’s eye reflectors and road signage were grossly overpriced, costing taxpayers billions for cheap materials.</li>
-      <li>Rock netting projects were used as “dumping grounds” for pork barrel funds, often overpriced and poorly implemented.</li>
-      <li>Several bridges collapsed shortly after inauguration, exposing the use of substandard materials and negligent oversight.</li>
-      <li>Widespread collusion in bidding, ghost employees, unregulated bicameral alterations of funding, and misuse of EAO (Engineering Administrative Overhead).</li>
+      <li><i class="fas fa-coins"></i> ₱118.5 billion lost annually to infrastructure-related corruption (COA reports).</li>
+      <li><i class="fas fa-water"></i> ₱1.9 trillion spent on flood control since 2010, with over ₱1 trillion allegedly lost to anomalies—yet floods persist nationwide.</li>
+      <li><i class="fas fa-road"></i> Overpriced “cat’s eyes” road reflectors and rock netting projects, costing billions in padded contracts.</li>
+      <li><i class="fas fa-bridge"></i> Bridges collapsed soon after completion due to substandard materials and labor.</li>
+      <li><i class="fas fa-file-invoice-dollar"></i> Ghost projects, and “generic flood control” project names with no clear scope.</li>
+      <li><i class="fas fa-handshake-slash"></i> Collusion in bidding among contractors and unregulated bicameral insertions that bloat project costs.</li>
+      <li><i class="fas fa-gavel"></i> Misuse of the Engineering Administrative Overhead (EAO) fund and lack of accountability.</li>
+      <li><i class="fas fa-question-circle"></i> During Senate hearings, DPWH officials, contractors, and agencies deflect responsibility—no one admits oversight.</li>
     </ul>
-    <p>These systemic issues mean not just lost money, but also unsafe roads, failed flood protection, and erosion of public trust.</p>
   </section>
 
   <section>
     <h2>Our Solution</h2>
-    <p>CorruptShield provides a holistic, tech-driven approach:</p>
+    <p>CorruptShield introduces a transparent, AI-powered, and blockchain-backed platform to tackle these issues at their root:</p>
     <ul>
-      <li><strong>AI Bid Vetting:</strong> Detects irregularities and red flags in contract proposals.</li>
-      <li><strong>Blockchain Tracking:</strong> Ensures immutability in budget flows, contracts, and project milestones.</li>
-      <li><strong>LIDAR & Geospatial Verification:</strong> Confirms whether claimed infrastructures truly exist.</li>
-      <li><strong>Agentic AI Oversight:</strong> Provides real-time monitoring and anomaly alerts.</li>
-      <li><strong>Citizen Chatbot Interface:</strong> Empowers communities to check project status and report issues.</li>
-      <li><strong>International Best Practices:</strong> Adapted from Japan, the Netherlands, and other leaders in flood resilience and infrastructure governance.</li>
-      <li><strong>Transparent Dashboard:</strong> Accessible to DPWH, COA, LGUs, and the public.</li>
-      <li><strong>M4GG (Mayors for Good Governance):</strong> Enables local oversight and direct citizen engagement.</li>
+      <li><i class="fas fa-robot"></i> <strong>AI Bid Vetting:</strong> Flags collusion, overpriced bids, and ghost contractors.</li>
+      <li><i class="fas fa-link"></i> <strong>Blockchain Paper Trail:</strong> Immutable tracking of budgets, contracts, and milestones—AI can instantly answer querries regarding the projects.</li>
+      <li><i class="fas fa-map"></i> <strong>LIDAR & Geospatial Verification:</strong> Confirms whether a project truly exists on the ground.</li>
+      <li><i class="fas fa-tasks"></i> <strong>AI Categorization & Phase Tracking:</strong> Detects vague “generic projects,” assigns proper categories (dike, pumping station, sloping), and identifies progress stage.</li>
+      <li><i class="fas fa-users"></i> <strong>Citizen Chatbot Interface:</strong> Communities can check status, report anomalies, and monitor spending in real time.</li>
+      <li><i class="fas fa-globe"></i> <strong>International Standards:</strong> Adapts best practices from Japan, the Netherlands, and Singapore in flood control and infrastructure governance.</li>
+      <li><i class="fas fa-chart-line"></i> <strong>Transparent Dashboard:</strong> Public, DPWH, COA, and LGUs see the same live data.</li>
+      <li><i class="fas fa-city"></i> <strong>M4GG (Mayors for Good Governance):</strong> Local governments gain oversight and accountability tools.</li>
     </ul>
-    <p>By combining advanced technology with public participation, CorruptShield ensures every peso works—and every project stands strong.</p>
+    <p>By combining advanced technology, global standards, and citizen participation, CorruptShield ensures every peso works—and every project stands strong.</p>
   </section>
 
   <footer>
